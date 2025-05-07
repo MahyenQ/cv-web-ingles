@@ -1,0 +1,352 @@
+/*menu*/
+
+.logo span:last-child { /* Logo del menu "CV" */
+    color: #ff7f2a; /* Es el color del texto "CV" */
+    font-weight: bold; /* Estilo del texto "CV" */
+  }
+
+  /* Espaciado entre elementos del menú */
+  .nav-link { 
+    display: flex; /* Flexbox para alinear icono y texto */
+    align-items: center; /* Centrar verticalmente */
+    gap: 6px; /* Espacio entre icono y texto */
+  }
+
+  .nav-link i {
+    font-size: 16px; /* Tamaño del ícono */
+  }
+
+  /* Botón de idioma (EN) estilo bordeado */
+  .lang-btn { 
+    border: 1px solid #ddd;
+    padding: 6px 12px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+    font-weight: 500; /* Es el peso de la fuente */
+  }
+
+/* Fuente general*/
+
+body {
+    font-family: 'Playfair Display', sans-serif; /* Cambia la fuente a Playfair Display */
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0; /* Elimina el padding por defecto del body */
+  }
+  
+  /* Contenedor principal de la primera pagina*/
+  .cv-container {
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: space-around; /* Para poner espacio entre elementos */
+    align-items: center; /* Centrar verticalmente */
+    padding: 40px 20px; 
+    flex-wrap: wrap;  /* Permite que los elementos se ajusten en pantallas pequeñas */
+    padding: 40px 20px; /* Espaciado interno */
+    background-image: url('../img/back.png'); /* La imagne de fondo */
+    background-size: cover; 
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  
+  /* Texto principal */
+  .text-container {
+    max-width: 500px; /* Ancho máximo del contenedor de texto */
+  }
+  
+  .text-container h1 { /* Título principal "Mahyen Qaiser" */
+    color: #0A2AB8; 
+    font-size: 36px;
+  }
+  
+  .text-container h2 { /* Subtítulo */
+    font-weight: 400; 
+    font-size: 20px; /* Tamaño de fuente del subtítulo */
+    color: #444;
+  }
+  
+  .text-container p { /* Un poco de descripción sobre mi */
+    margin: 15px 0; /* Margen superior e inferior */
+  }
+  
+  /* Botone de "video curriculum" */
+  .buttons { 
+    margin-top: 20px;
+  }
+
+  .video-cv-box { /* video CV en castellano */
+    border: 2px solid black; /*Cambia el color del borde */
+    padding: 10px; /* Espaciado interno */
+    text-align: center;  /* Centrar texto */
+    display: inline-block; /* Para que el ancho se ajuste al contenido */
+    transition: background-color 0.3s ease; /* es la transición al cambiar el color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+
+  .video-cv-box:hover { /* Efecto hover */
+    background-color: palegreen; /* Cambia el color de fondo al pasar el mouse */
+  }
+
+  .lang-btn:hover { /* Botón de (EN) que esta en menu */
+    background-color: #0A2AB8; /* Cambia el color de fondo al pasar el mouse */
+    color: white; /* Cambia el color del texto al pasar el mouse */
+}
+  
+  /* Imagen y badge */
+  .photo-section { /* Sección de foto que esta en la derecha */
+    position: relative; 
+    margin-top: 60px;
+  }
+  
+  .profile-pic { /* Imagen de perfil */
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* mantiene la proporción de la imagen */
+  }
+
+  /*de la pagina Quien soy*/
+
+.about-section { 
+    padding: 40px 20px;
+    background-image: url('../img/back.png'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  
+  .about-section h2 { /* Título de la sección */
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 3px solid orange; /* Línea debajo del título */
+    display: inline-block; /* Para que el borde se ajuste al texto */
+    margin-bottom: 30px; /* Espacio debajo del título */
+  }
+  
+  /* Contenedor principal */
+
+  .about-container { 
+    display: flex; /* para alinear columnas */
+    justify-content: space-between; /* Espacio entre columnas */
+    gap: 30px; /* Espacio entre columnas */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+  }
+  
+  /* Columnas */
+  .left-column,
+  .right-column { /* Columnas izquierda y derecha */
+    flex: 1; /* Para que ocupen el mismo espacio */
+    min-width: 300px; /* Ancho mínimo de las columnas */
+  }
+  
+  /* Tarjetas */
+  .card { 
+    background-color: #fff; /* Color de fondo de la tarjeta */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra de la tarjeta */
+    padding: 20px; 
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+  }
+  
+  /* Tarjeta de perfil */
+  .profile-card { 
+    text-align: center; 
+    padding-top: 0;
+  }
+  
+  .card-header { /* Encabezado de la tarjeta */
+    height: 60px; /* Altura del encabezado */
+    background-color: #103DC8;
+    border-top-left-radius: 12px; /* Bordes redondeados */
+    border-top-right-radius: 12px; 
+  }
+  
+  .profile-img { /* Imagen de perfil pequeño */
+    margin-top: -30px; /* Para superponer la imagen */
+  }
+  
+  .profile-img img { /* Imagen de perfil */
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%; 
+    border: 4px solid white; /* Borde blanco */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  
+  /* Info personal */
+  .info-card h4 { 
+    margin-top: 0;
+  }
+  
+  /* Enlace */
+  a { 
+    color: #103DC8;
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  /* Tarjeta descripción */
+  .description-card h4 { 
+    margin-top: 0; /* Espacio superior */
+  }
+  
+  .tags { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .tags span { 
+    background-color: #f1f3f5; 
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  /*footer de cada pagina*/
+  .site-footer { 
+    background-color: #1e3aa8; /* Color de fondo del footer */
+    color: white;
+    padding: 40px 20px 20px; 
+    text-align: center;
+  }
+  
+  .footer-top { /* Parte superior del footer */
+    display: flex; /* para alinear columnas */
+    justify-content: space-between; /* Espacio entre columnas */
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    gap: 20px; /* Espacio entre columnas */
+  }
+  
+  .footer-col {
+    flex: 1; /* Para que ocupen el mismo espacio */
+    min-width: 220px;
+  }
+  
+  .footer-col h3 { 
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-col p { 
+    margin: 8px 0;
+  }
+  
+  .footer-col a { 
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-col a:hover { 
+    text-decoration: underline;
+  }
+  
+  /* Iconos de redes */
+  .social-icons a { 
+    font-size: 1.4rem; /* Tamaño de los iconos */
+    margin-right: 15px; /* Espacio entre iconos */
+    display: inline-block; /* Para que el ancho se ajuste al contenido */
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 30px 0 20px;
+  }
+  
+  .footer-bottom { 
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+
+
+
+
+
+
+  /* Responsive: ajustar espaciado en móvil */
+  @media (max-width: 768px) {
+
+    /*menu*/
+    .navbar-nav {
+      gap: 10px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+    }
+
+    .lang-btn {
+      padding: 4px 10px;
+    }
+
+    /*de la portada*/
+
+    .cv-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .text-container {
+        padding: 0 15px;
+      }
+    
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .btn-primary,
+      .btn-secondary {
+        margin: 5px 0;
+        width: 80%;
+      }
+    
+      .metrics {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-top {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .social-icons a { /* Iconos de redes */
+        margin: 0 10px;
+      }
+    
+
+      .experience-badge {
+        right: 0;
+        top: 130px;
+      }
+
+      /*de la pagina Quien soy*/
+
+      .about-container {
+        flex-direction: column;
+      }
+    
+      .left-column,
+      .right-column {
+        width: 100%;
+      }
+    
+      .tags {
+        justify-content: center;
+      }
+    
+      .tags span {
+        flex: 1 1 40%;
+        text-align: center;
+      }
+
+
+
+
+
+
+
+
+  }

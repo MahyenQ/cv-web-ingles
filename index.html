@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV</title>
+  <link rel="icon" type="img/png" href="./img/icon.png">
+  <!-- Bootstrap CSS para menu--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font íconos --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <!-- Letra Google Fonts --><link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Comfortaa:wght@300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Geo:ital@0;1&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">
+  <!-- Para los iconos de Bootstap --><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="navbar bg-white shadow-sm px-4 py-2">
+  <div class="container-fluid d-flex justify-content-between align-items-center"> 
+
+    <!-- Logo que esta en la izquierda -->
+    <div class="logo fs-4">
+      <span>CV</span> <!-- En el "Logo" que aparece en la parte superior izquierda -->
+    </div>
+
+    <!-- Menú de navegación (no colapsable, siempre visible) -->
+    <div class="d-flex align-items-center gap-4 flex-wrap">
+
+      <!-- Enlace de esta mimsa pagina (Inicio) -->
+      <a href="index.html" class="nav-link text-primary bg-light rounded px-2 py-1"><i class="fas fa-house"></i> Inicio</a> 
+
+      <!-- Otros enlaces que llevan a otras paginas -->
+      <a href="./html/soy.html"class="nav-link text-dark"><i class="fas fa-user"></i> ¿Quién soy?</a> <!-- Enlace a la pagina de quien soy -->
+      <a href="./html/estudios.html" class="nav-link text-dark"><i class="fas fa-tablet-alt"></i> Estudios</a> <!-- Enlace a la pagina de estudios -->
+      <a href="./html/experiencia.html" class="nav-link text-dark"><i class="fas fa-briefcase"></i> Experiencia</a> <!-- Enlace a la pagina de experiencia -->
+
+      <!-- Botón de idioma -->
+      <button class="lang-btn">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Sección principal abajo del menu -->
+<main class="cv-container">
+    <div class="text-container">
+      <h1>Mahyen Qaiser</h1> <!-- Nombre -->
+      <h2><B>Estudiante de Informatica</B></h2> <!-- Titulo -->
+      <p>Hola, soy Mahyen, un estudiante apasionada por la informática y la tecnología.
+        Me encanta aprender y explorar nuevas áreas en el campo de la programación y la
+        administración de sistemas. Actualmente cursando el Ciclo Formativo de Sistemas Microinformáticos y Redes desde 2023,
+        con un amplio conocimiento de diversas áreas, incluyendo infraestructuras, HTML, CSS, seguridad y sistemas operativos.</p> <!-- Un poco de descripción sobre mi-->
+
+      <!-- Botones -->
+      <div class="buttons">
+            <div class="video-cv-box">
+                <a href="https://www.youtube.com/embed/bMeiTTsVveY" target="_blank" class="text-decoration-none text-dark">VIDEO CURRÍCULUM</a> <!-- Botón que lleva a mi video curriculum que esta en youtube (castellano) -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Foto y experiencia -->
+    <div class="photo-section">
+      <img src="./img/me.png" alt="Foto de perfil" class="profile-pic"> <!-- Foto de perfil que esta en la derecha en un circulo -->
+    </div>
+  </main>
+
+  <!--Footer-->
+  <footer class="site-footer">
+    <div class="footer-top">
+
+      <!-- Columna 1 -->
+      <div class="footer-col"> <!-- Columna que contiene el CV y un poco de descripcion sobre mi -->
+        <h3>CV</h3> 
+        <p>Cursando estudios de Formación Profesional de Grado Medio en Sistemas Microinformáticos y Redes</p> <!--Un poco de descripcion sobre mi en el footer-->
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="footer-col">
+        <h3>Contacto</h3> 
+        <p><i class="bi bi-envelope"></i> <a href="gmail:mahyen@cvmahyen.com">mahyen@cvmahyen.com</a></p> <!-- Enlace a mi correo electronico -->
+        <p><i class="bi bi-telephone"></i> +34 600 000 000</p> <!-- Mi numero de telefono -->
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="footer-col">
+        <h3>Social</h3> <!-- Redes sociales -->
+        <p class="social-icons">
+          <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a> <!-- Enlace a la pagina Linkedin -->
+          <a href="https://www.github.com/"><i class="bi bi-github"></i></a> <!-- Enlace a la pagina Github -->
+        </p>
+      </div>
+    </div>
+
+    <hr />
+    <div class="footer-bottom"> <!-- Parte de abajo del footer -->
+      <p>© 2025 CV Mahyen. Todos los derechos reservados.</p> 
+    </div>
+  </footer>
+<!-- Bootstrap JS (opcional) --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
