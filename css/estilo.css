@@ -81,7 +81,7 @@ body {
   }
 
   .video-cv-box:hover { /* Efecto hover */
-    background-color: palegreen; /* Cambia el color de fondo al pasar el mouse */
+    background-color: rgb(114, 164, 238); /* Cambia el color de fondo al pasar el mouse */
   }
 
   .lang-btn:hover { /* Botón de (EN) que esta en menu */
@@ -100,6 +100,7 @@ body {
     width: 300px;
     height: 300px;
     object-fit: cover; /* mantiene la proporción de la imagen */
+    border: 4px solid black; /* Borde negro alrededor de la imagen */
   }
 
   /*de la pagina Quien soy*/
@@ -150,6 +151,12 @@ body {
     text-align: center; 
     padding-top: 0;
   }
+
+  .profile-card:hover {
+    background-color: #c3e4ef; /* Azul de fondo al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  
   
   .card-header { /* Encabezado de la tarjeta */
     height: 60px; /* Altura del encabezado */
@@ -174,11 +181,21 @@ body {
   .info-card h4 { 
     margin-top: 0;
   }
+
+  .info-card:hover {
+    background-color: #c3e4ef; /* Azul claro */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
   
   /* Enlace */
   a { 
     color: #103DC8;
     text-decoration: none; /* Sin subrayado */
+  }
+
+  .description-card:hover {
+    background-color: #c3e4ef; /* Azul claro */
+    transition: background-color 0.3s ease; /* Transición suave */
   }
   
   /* Tarjeta descripción */
@@ -186,21 +203,320 @@ body {
     margin-top: 0; /* Espacio superior */
   }
   
-  .tags { 
+  .tags { /* Etiquetas para las aficiones */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 15px;
   }
+
+  .tags span:hover {
+    border: 2px solid #0A2AB8; /* Azul de borde al pasar el mouse */
+    transition: border-color 0.3s ease; /* Transición suave */
+  }
   
-  .tags span { 
+  .tags span {
     background-color: #f1f3f5; 
     padding: 10px 15px;
     border-radius: 8px;
     font-size: 14px;
   }
 
-  /*footer de cada pagina*/
+/* Contenedor principal donde se mostran las habilidades */
+.first { 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el efecto elevado */
+  width: 80%;
+  max-width: 600px;
+}
+
+.first:hover { /* Efecto hover para que cuando raton por encima cambie de color*/
+  background-color: #c3e4ef; /* Azul claro */
+}
+
+/* Título habilidades*/
+.h2 { 
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: blue;
+}
+
+/* Estilos para cada habilidad */
+.box {
+  margin-bottom: 15px; /* Espacio entre habilidades */
+}
+
+.box-name { /* Nombre de la habilidad */
+  font-size: 18px;
+  margin-bottom: 5px; /* Espacio inferior */
+  color: rgb(51, 0, 255);
+}
+
+/* Contenedor de la barra de progreso */
+.progress {
+  background-color: #e0e0e0; /* Color de fondo de la barra */
+  border-radius: 5px;
+  overflow: hidden; /* Evita que sobresalgan elementos */
+}
+
+/* Barra de progreso que indica el porcentaje */
+.progress-bar {
+  height: 20px;
+  background-color: #7a796b; /* Color de la barra */
+  width: 0;
+  transition: width 0.5s; /* Efecto de transición */
+}
+
+/*de la pagina "Estudios"*/
+
+/* Contenedor principal */
+.primero {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fff;
+  flex-wrap: wrap;
+  background-image: url('../img/back1.png'); /* La imagne de fondo */
+  background-size: cover; 
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat;
+}
+
+/* Título principal Estudios */
+.titulo {
+  width: 100%;
+  font-size: 2.5rem;
+  color: #001845;
+  border-bottom: 4px solid #fca311;
+  margin-bottom: 1rem;
+}
+
+/* Sección de formación académica */
+.formacion { 
+  flex: 2;
+  min-width: 300px;
+}
+
+.formacion h2 { 
+  color: blue;
+  margin-bottom: 1rem;
+}
+
+.item {
+  border-left: 3px solid #1d3557;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.item h3 {
+  color: #1d3557;
+  font-weight: bold;
+}
+
+
+.fecha {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ffedd5;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+}
+
+/* Sección lateral: Certificaciones e idiomas */
+.lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 280px;
+}
+
+.certificaciones, .idiomas {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.certificaciones {
+    border: 2px solid #007bff;
+    border-radius: 0.5rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.idiomas {
+    border: 2px solid #007bff;
+    border-radius: 0.5rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certificaciones:hover, .idiomas:hover { /* Efecto hover para los dos cuadros*/
+    background-color: #d0e7ff; /* Azul claro */
+}
+
+.certificaciones h2, .idiomas h2 {
+  color: blue;
+  margin-bottom: 1rem;
+}
+
+.cert {
+  background-color: #fff;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+}
+
+.idioma {
+  margin-bottom: 1rem;
+}
+
+.barra {
+  background-color: #e0e0e0;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progreso {
+  height: 100%;
+  background-color: #14213d;
+}
+
+/* Etiqueta derecha del idioma */
+.nivel {
+  float: right;
+  font-weight: bold;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        }
+
+.mapa iframe {
+    width: 80%;
+    max-width: 600px;
+        }
+
+
+/*para la pagina experiencia*/
+
+/* Aplicamos una imagen de fondo al contenedor principal */
+.fondo {
+  background-image: url("../img/back.png"); /* Usa el nombre real del archivo de fondo */
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 1.5rem;
+  min-height: 100vh;
+}
+
+/* Título principal */
+.titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1d3557;
+  border-bottom: 3px solid #fca311;
+  margin-bottom: 2rem;
+}
+
+/* Sección de experiencia */
+.experiencia {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Línea vertical */
+.experiencia::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 5.7rem; /* Ajusta la posición para que comience encima del título */
+  bottom: 0;
+  width: 4px;
+  background-color: #1d4ed8;
+}
+
+/* Cada entrada del timeline */
+.timeline-item {
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 40px;
+}
+
+/* Punto en la línea */
+.punto {
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background-color: #1d4ed8;
+  border-radius: 50%;
+}
+
+/* Contenido del trabajo */
+.contenido {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.etiqueta {
+  display: inline-block;
+  background-color: #e0edff;
+  color: #1d4ed8;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.icono {
+  margin-right: 5px;
+}
+
+h3 {
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.empresa {
+  font-weight: bold;
+  color: #475569;
+  margin-bottom: 0.3rem;
+}
+
+
+/*footer de cada pagina*/
+
+.site-footer .logo span:last-child, 
+.site-footer .footer-col h3, 
+.site-footer .social-icons a {
+  color: white; /* Color de los textos y enlaces en el footer (CV, Contacto, Social)*/
+}
+
   .site-footer { 
     background-color: #1e3aa8; /* Color de fondo del footer */
     color: white;
@@ -257,12 +573,6 @@ body {
   }
 
 
-
-
-
-
-
-  /* Responsive: ajustar espaciado en móvil */
   @media (max-width: 768px) {
 
     /*menu*/
@@ -301,13 +611,8 @@ body {
         margin: 5px 0;
         width: 80%;
       }
-    
-      .metrics {
-        flex-direction: column;
-        align-items: center;
-      }
 
-      .footer-top {
+      .footer-top { /* Parte superior del footer */
         flex-direction: column;
         text-align: center;
       }
@@ -343,10 +648,70 @@ body {
       }
 
 
+      /*cuadro de habilidades*/
+
+      .first {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .h2 {
+        font-size: 20px;
+    }
+
+    .box-name {
+        font-size: 16px;
+    }
+
+    .progress-bar {
+        height: 15px;
+    }
+
+    /*para la hoja de estudios*/
+
+    .primero {
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .titulo {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .fecha {
+      position: static;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .item {
+      padding-right: 1rem;
+    }
+
+    .lateral {
+      flex-direction: column;
+    }
 
 
+    /*para la pagina experiencia*/
 
+    .experiencia::before {
+      left: 10px;
+    }
 
+    .timeline-item {
+      flex-direction: column;
+      padding-left: 30px;
+    }
 
+    .contenido {
+      padding: 0.8rem;
+    }
+
+    .titulo {
+      font-size: 2rem;
+      text-align: center;
+    }
 
   }

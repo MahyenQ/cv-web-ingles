@@ -57,7 +57,7 @@
 
         <!-- Información personal -->
         <div class="card info-card"> <!-- cuadro que contiene la información personal -->
-          <h4><B>Información Personal</B></h4>
+          <h4 class="h2"><B>Información Personal</B></h4><br>
           <p><strong>Nombre:</strong> Mahyen Qaiser</p>
           <p><strong>Correo:</strong> 📧 <a href="gmail:mahyen.q221@gmail.com">mahyen.q221@gmail.com</a></p>
           <p><strong>Teléfono:</strong> 📞 +34 600 000 000</p>
@@ -69,53 +69,80 @@
       <!-- Columna derecha -->
       <div class="right-column"> <!-- Columna derecha que contiene la tarjeta de objetivo profesional y aficiones -->
         <div class="card description-card"> 
-          <h4><B>OBJETIVO PROFESIONAL</B></h4> <!-- Titulo de la tarjeta -->
-          <p> 
-            Soy una estudiante del ciclo SMX (Sistemas
-            Microinformáticos y Redes) con una pasión por
-            la tecnología. Estoy buscando una oportunidad
-            para aplicar mis conocimientos y habilidades
-            en un entorno laboral real. Soy una persona
-            comprometida con habilidades de resolución
-            de problemas y capacidad de trabajar en
-            equipo. Mi objetivo es crecer profesionalmente
-            y contribuir al éxito de la empresa a través de
-            mi dedicación e interés.
-          </p>
-          <h4><B>Aficiones</B></h4>
-          <p>
-            En mi tiempo libre disfruto de la fotografía de paisajes, senderismo, y aprender sobre nuevas tecnologías.
-            También soy una entusiasta de los juegos de mesa y disfruto organizando noches de juegos con amigos y familia.
-          </p>
+            <h4 class="h2"><B>OBJETIVO PROFESIONAL</B></h4> <!-- Titulo de la tarjeta -->
+            <p> <!-- Descripción de mi objetivo profesional -->
+              Soy una estudiante del ciclo SMX (Sistemas
+              Microinformáticos y Redes) con una pasión por
+              la tecnología. Estoy buscando una oportunidad
+              para aplicar mis conocimientos y habilidades
+              en un entorno laboral real. Soy una persona
+              comprometida con habilidades de resolución
+              de problemas y capacidad de trabajar en
+              equipo. Mi objetivo es crecer profesionalmente
+              y contribuir al éxito de la empresa a través de
+              mi dedicación e interés.
+            </p>
+            <h4 class="h2"><B>Aficiones</B></h4>
+            <p> <!-- Descripción de mis aficiones -->
+              En mi tiempo libre disfruto de la fotografía de paisajes, senderismo, y aprender sobre nuevas tecnologías.
+              También soy una entusiasta de los juegos de mesa y disfruto organizando noches de juegos con amigos y familia.
+            </p>
 
-          <!-- Intereses -->
-          <div class="tags">
-            <span>Fotografía</span>
-            <span>Senderismo</span>
-            <span>Tecnología</span>
-            <span>Juegos de mesa</span>
-            <span>Viajar</span>
-            <span>Jugar batminton</span>
+            <!-- Intereses -->
+              <div class="tags"> <!-- Etiquetas que contienen mis intereses -->
+                <span>Fotografía</span>
+                <span>Senderismo</span>
+                <span>Tecnología</span>
+                <span>Juegos de mesa</span>
+                <span>Viajar</span>
+                <span>Jugar batminton</span>
+              </div>   
           </div>
 
-          <br>
-
-            <!-- Idiomas -->
-        <h4><B>Idiomas: </B></h4> 
-          <div class="tags">
-            <span>URDU</span>
-            <span>INGLES</span>
-            <span>CASTELLANO</span>
-            <span>CATALÁN</span>
-            <span>FRANCÉS</span>
-          </div>
-
+          <div class="first">
+            <h2 class="h2">Habilidades</h2>
+    
+            <!-- Sección de habilidades -->
+            <div class="box"> <!-- cuadro que contiene la habilidad y la barra de progreso -->
+                <div class="box-name">Excel</div> <!-- nombre de la habilidad -->
+                <div class="progress"> <!-- es el contenedor de la barra de progreso -->
+                    <div class="progress-bar" style="width: 70%;"></div> <!-- barra de progreso que indica el porcentaje y se puede de cambiar ya que he puesto style aquí-->
+                </div>
+            </div>
+            <div class="box"> <!-- cuadro que contiene la habilidad y la barra de progreso -->
+                <div class="box-name">Programación (HTML y CSS)</div> <!-- nombre de la habilidad -->
+                <div class="progress"> <!-- es el contenedor de la barra de progreso -->
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="box"> <!-- cuadro que contiene la habilidad y la barra de progreso -->
+                <div class="box-name">LibreOffice</div> <!-- nombre de la habilidad -->
+                <div class="progress"> <!-- es el contenedor de la barra de progreso -->
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="box"> <!-- cuadro que contiene la habilidad y la barra de progreso -->
+                <div class="box-name">Microsoft Office</div> <!-- nombre de la habilidad -->
+                <div class="progress"> <!-- es el contenedor de la barra de progreso -->
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="box"> <!-- cuadro que contiene la habilidad y la barra de progreso -->
+                <div class="box-name">Windows/Linux</div> <!-- nombre de la habilidad -->
+                <div class="progress"> <!-- es el contenedor de la barra de progreso -->
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="box"> <!-- cuadro que contiene la habilidad y la barra de progreso -->
+                <div class="box-name">Responsive Design</div> <!-- nombre de la habilidad -->
+                <div class="progress"> <!-- es el contenedor de la barra de progreso -->
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
   </section>
-
-
 
   <footer class="site-footer"> <!-- Footer de la pagina -->
     <div class="footer-top">
@@ -136,8 +163,8 @@
       <div class="footer-col">
         <h3>Social</h3>
         <p class="social-icons">
-          <a href="#"><i class="bi bi-linkedin"></i></a> <!-- Enlace a la pagina Linkedin -->
-          <a href="#"><i class="bi bi-github"></i></a> <!-- Enlace a la pagina Github -->
+          <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a> <!-- Enlace a la pagina Linkedin -->
+          <a href="https://www.github.com/"><i class="bi bi-github"></i></a> <!-- Enlace a la pagina Github -->
         </p>
       </div>
     </div>
@@ -147,7 +174,5 @@
       <p>© 2025 CV Digital. Todos los derechos reservados.</p>
     </div>
   </footer>
-
-
 </body>
 </html>
