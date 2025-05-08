@@ -1,5 +1,4 @@
-/*menu*/
-
+/*menu*/ /*Inicio*/
 .logo span:last-child { /* Logo del menu "CV" */
     color: #ff7f2a; /* Es el color del texto "CV" */
     font-weight: bold; /* Estilo del texto "CV" */
@@ -24,9 +23,7 @@
     font-weight: 500; /* Es el peso de la fuente */
   }
 
-/* Fuente general*/
-
-body {
+body { /* Fuente general*/
     font-family: 'Playfair Display', sans-serif; /* Cambia la fuente a Playfair Display */
     margin: 0; /* Elimina el margen por defecto del body */
     padding: 0; /* Elimina el padding por defecto del body */
@@ -46,8 +43,7 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
   }
   
-  /* Texto principal */
-  .text-container {
+  .text-container { /* es del texto principal */
     max-width: 500px; /* Ancho máximo del contenedor de texto */
   }
   
@@ -66,8 +62,7 @@ body {
     margin: 15px 0; /* Margen superior e inferior */
   }
   
-  /* Botone de "video curriculum" */
-  .buttons { 
+  .buttons {  /* Botone de "video curriculum" */
     margin-top: 20px;
   }
 
@@ -103,7 +98,9 @@ body {
     border: 4px solid black; /* Borde negro alrededor de la imagen */
   }
 
-  /*de la pagina Quien soy*/
+  /*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+  /*de la pagina Quien soy?*/
 
 .about-section { 
     padding: 40px 20px;
@@ -113,52 +110,46 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
   }
   
-  .about-section h2 { /* Título de la sección */
+  .about-section h2 { /* Título de la sección "Quien soy?" */
     font-size: 28px;
     font-weight: bold;
     border-bottom: 3px solid orange; /* Línea debajo del título */
     display: inline-block; /* Para que el borde se ajuste al texto */
     margin-bottom: 30px; /* Espacio debajo del título */
   }
-  
-  /* Contenedor principal */
 
-  .about-container { 
+  .about-container {   /* contenedor principal */
     display: flex; /* para alinear columnas */
     justify-content: space-between; /* Espacio entre columnas */
     gap: 30px; /* Espacio entre columnas */
     flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
   }
   
-  /* Columnas */
   .left-column,
   .right-column { /* Columnas izquierda y derecha */
     flex: 1; /* Para que ocupen el mismo espacio */
     min-width: 300px; /* Ancho mínimo de las columnas */
   }
   
-  /* Tarjetas */
-  .card { 
-    background-color: #fff; /* Color de fondo de la tarjeta */
+  .card {   /* cuadro */
+    background-color: #fff; /* Color de fondo del cuadro */
     border-radius: 12px; /* Bordes redondeados */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra de la tarjeta */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Sombra del cuadro */
     padding: 20px; 
-    margin-bottom: 20px; /* Espacio entre tarjetas */
+    margin-bottom: 20px; /* Espacio entre cuadros */
   }
   
-  /* Tarjeta de perfil */
-  .profile-card { 
+  .profile-card {   /* cuadro de perfil */
     text-align: center; 
     padding-top: 0;
   }
 
-  .profile-card:hover {
+  .profile-card:hover { /* Efecto hover para el cuadro de perfil */
     background-color: #c3e4ef; /* Azul de fondo al pasar el mouse */
     transition: background-color 0.3s ease; /* Transición suave */
   }
   
-  
-  .card-header { /* Encabezado de la tarjeta */
+  .card-header { /* Encabezado del cuadro */
     height: 60px; /* Altura del encabezado */
     background-color: #103DC8;
     border-top-left-radius: 12px; /* Bordes redondeados */
@@ -172,80 +163,78 @@ body {
   .profile-img img { /* Imagen de perfil */
     width: 80px; 
     height: 80px;
-    border-radius: 50%; 
-    border: 4px solid white; /* Borde blanco */
+    border-radius: 50%; /* Bordes redondeados hasta 50% para que quede como circulo */
+    border: 3px solid orange; /* Borde naranja*/
     object-fit: cover; /* Mantiene la proporción de la imagen */
   }
   
-  /* Info personal */
-  .info-card h4 { 
+  .info-card h4 {  /* el cuadro de info personal */
     margin-top: 0;
   }
 
-  .info-card:hover {
+  .info-card:hover { /* Efecto hover para el cuadro de info personal */
     background-color: #c3e4ef; /* Azul claro */
     transition: background-color 0.3s ease; /* Transición suave */
   }
   
-  /* Enlace */
-  a { 
+  a {   /* Enlace de correo en el cuadro de "Información Personal" */
     color: #103DC8;
-    text-decoration: none; /* Sin subrayado */
+    text-decoration: none; /* para que no quede subrayado */
+  }
+  
+  .description-card h4 { /*cuadro de Objetivo Personal */
+    margin-top: 0; /* Espacio superior */
   }
 
-  .description-card:hover {
+  .description-card:hover { /* Efecto hover para el cuadro de Objetivo Personal */
     background-color: #c3e4ef; /* Azul claro */
     transition: background-color 0.3s ease; /* Transición suave */
-  }
-  
-  /* Tarjeta descripción */
-  .description-card h4 { 
-    margin-top: 0; /* Espacio superior */
   }
   
   .tags { /* Etiquetas para las aficiones */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
+    display: flex; /* Flexbox para alinear etiquetas */
+    flex-wrap: wrap; /* Permite que las etiquetas se ajusten en varias líneas */
+    gap: 10px; 
+    margin-top: 15px; /* Espacio superior */
   }
 
-  .tags span:hover {
+  .tags span:hover { /* Efecto hover para los brodes de las etiquetas */
     border: 2px solid #0A2AB8; /* Azul de borde al pasar el mouse */
     transition: border-color 0.3s ease; /* Transición suave */
   }
   
-  .tags span {
-    background-color: #f1f3f5; 
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-size: 14px;
+  .tags span { /* estilo para cada etiqueta */
+    background-color: #e8e7d7; 
+    padding: 10px 15px; /* es para el espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de fuente */
   }
 
-/* Contenedor principal donde se mostran las habilidades */
-.first { 
+.first { /* Contenedor principal donde se mostran las habilidades */
   background-color: #fff;
-  padding: 20px;
+  padding: 20px; 
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el efecto elevado */
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .first:hover { /* Efecto hover para que cuando raton por encima cambie de color*/
   background-color: #c3e4ef; /* Azul claro */
 }
 
-/* Título habilidades*/
-.h2 { 
+.h2 { /* Título habilidades*/
   margin-bottom: 20px;
   font-size: 24px;
   color: blue;
 }
 
-/* Estilos para cada habilidad */
-.box {
-  margin-bottom: 15px; /* Espacio entre habilidades */
+.blue { /* para poner el color azul a algunos encabezados, los que tiene que la clase "blue"*/
+  color: blue;
+}
+
+.box { /* Estilos para cada habilidad */
+  margin-bottom: 10px; /* Espacio entre habilidades */
 }
 
 .box-name { /* Nombre de la habilidad */
@@ -254,274 +243,258 @@ body {
   color: rgb(51, 0, 255);
 }
 
-/* Contenedor de la barra de progreso */
-.progress {
-  background-color: #e0e0e0; /* Color de fondo de la barra */
-  border-radius: 5px;
+.progress { /* Contenedor de la barra de porcentaje */
+  background-color: #e0e0e0; /* Color de fondo de las barra */
+  border-radius: 7px;
   overflow: hidden; /* Evita que sobresalgan elementos */
 }
 
-/* Barra de progreso que indica el porcentaje */
-.progress-bar {
-  height: 20px;
+.progress-bar { /* Barra de progreso que indica el porcentaje */
+  height: 20px; /* Altura de la barra */
   background-color: #7a796b; /* Color de la barra */
-  width: 0;
-  transition: width 0.5s; /* Efecto de transición */
 }
 
-/*de la pagina "Estudios"*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/* Contenedor principal */
-.primero {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
+/*Para las paginas "Estudios/Studies"*/
+
+.primero { /* Contenedor principal */
+  display: flex; /* para alinear columnas */
+  justify-content: space-between; /* Espacio entre columnas */
+  padding: 2rem; 
   gap: 2rem;
-  width: 100vw;
-  min-height: 100vh;
-  background-color: #fff;
-  flex-wrap: wrap;
+  width: 100vw; /* Ancho completo de la pantalla */
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
   background-image: url('../img/back1.png'); /* La imagne de fondo */
-  background-size: cover; 
+  background-size: cover; /* Ajusta la imagen al contenedor */
   background-position: center; /* Centra la imagen de fondo */
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
-/* Título principal Estudios */
-.titulo {
-  width: 100%;
-  font-size: 2.5rem;
-  color: #001845;
-  border-bottom: 4px solid #fca311;
-  margin-bottom: 1rem;
+.titulo { /* Título principal Estudios */
+  width: 100%; /* Ancho completo */
+  font-size: 2.5rem; /* Tamaño de fuente */
+  color: #001845; 
+  border-bottom: 4px solid #fca311; /* Línea debajo del título */
+  margin-bottom: 1rem; /* Espacio debajo del título */
 }
 
-/* Sección de formación académica */
-.formacion { 
-  flex: 2;
-  min-width: 300px;
+.formacion { /* Sección de formación académica */
+  flex: 2; /* Para que ocupe el doble de espacio que la sección lateral */
+  min-width: 300px; /* Ancho mínimo */
 }
 
-.formacion h2 { 
+.formacion h2 { /* Título de la sección "Formacion Academica"*/
   color: blue;
   margin-bottom: 1rem;
 }
 
-.item {
-  border-left: 3px solid #1d3557;
-  padding-left: 1rem;
-  margin-bottom: 1.5rem;
-  position: relative;
+.item { /* Cada entrada de la formación académica */
+  border-left: 3px solid #1d3557; /* Líneas izquierdas | */
+  padding-left: 1rem; /* Espacio interno a la izquierda */
+  margin-bottom: 1.5rem; /* Espacio entre entradas */
+  position: relative; /* Para posicionar la fecha */
 }
 
-.item h3 {
-  color: #1d3557;
-  font-weight: bold;
+.item h3 { /* Título de cada entrada (Cursando, Grado Medio, ESO) */
+  color: #0d0da7;
+  font-weight: bold; 
 }
 
 
-.fecha {
-  position: absolute;
+.fecha { /* Fecha de cada entrada */
+  position: absolute; /*que se quede en la parte derecha*/
   right: 0;
   top: 0;
   background-color: #ffedd5;
-  padding: 0.2rem 0.6rem;
-  border-radius: 1rem;
+  padding: 0.2rem 0.6rem; 
+  border-radius: 1rem; 
   font-size: 0.85rem;
+  border: 3px solid orange; /* Borde naranja de las fechas*/
 }
 
-/* Sección lateral: Certificaciones e idiomas */
-.lateral {
+.lateral { /* Sección de Actualmente estudiando e idiomas */
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /*que se alineen verticalmente*/
   gap: 2rem;
-  min-width: 280px;
+  min-width: 280px; /*que no se haga tan pequeño*/
 }
 
-.certificaciones, .idiomas {
+.studies, .idiomas { /* Cuadros de Actualmente estudiando e idiomas */
   background-color: #f8f9fa;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
 }
 
-.certificaciones {
+.studies { /* Cuadro de Actualmente estudiando */
     border: 2px solid #007bff;
     border-radius: 0.5rem;
     background-color: #f8f9fa;
     padding: 1rem;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /*que se vea un poco elevado*/
 }
 
-.idiomas {
-    border: 2px solid #007bff;
-    border-radius: 0.5rem;
+.idiomas { /* Cuadro de Idiomas */
+    border: 2px solid #007bff; /* Borde azul del cuadro de Idiomas*/
+    border-radius: 0.5rem; /* Bordes redondeados */
     background-color: #f8f9fa;
-    padding: 1rem;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.certificaciones:hover, .idiomas:hover { /* Efecto hover para los dos cuadros*/
-    background-color: #d0e7ff; /* Azul claro */
+.studies:hover, .idiomas:hover { /* Efecto hover para los dos cuadros*/
+    background-color: #d0ecff; /* Azul claro */
 }
 
-.certificaciones h2, .idiomas h2 {
+.studies h2, .idiomas h2 { /* Títulos de los cuadros */
   color: blue;
   margin-bottom: 1rem;
 }
 
-.cert {
+.cert { /*quadro de cada modulo*/
   background-color: #fff;
   padding: 0.7rem;
-  border-radius: 0.4rem;
-  margin-bottom: 0.5rem;
-  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+  border-radius: 0.4rem; /* Bordes redondeados */
+  margin-bottom: 0.5rem; /* Espacio entre modulos */
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05); /* Sombra para el efecto elevado */
+  border: 1px solid orange; /* Borde naranja de los modulos*/
 }
 
 .idioma {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /* Espacio entre idiomas */
 }
 
-.barra {
+.barra { /* Contenedor de la barra de porcentaje */
   background-color: #e0e0e0;
-  height: 8px;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-top: 5px;
+  height: 8px; /* Altura de la barra */
+  border-radius: 5px; 
+  overflow: hidden; /* que no sobresalga nada*/
+  margin-top: 5px; /*que no quede pegado al nombre del idioma*/
 }
 
-.progreso {
-  height: 100%;
+.progreso { /* Barra de progreso que indica el porcentaje */
+  height: 100%; /* Altura completa del contenedor */
   background-color: #14213d;
 }
 
-/* Etiqueta derecha del idioma */
-.nivel {
-  float: right;
-  font-weight: bold;
+.nivel { /* Etiquetas de niveles de cada idioma a la derecha*/
+  float: right; /* que se quede a la derecha*/
+  font-weight: bold; /*para que se vea un poco mas fuerte*/
+  color: red;
 }
 
-.mapa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-        }
-
-.mapa iframe {
-    width: 80%;
-    max-width: 600px;
-        }
-
-
-/*para la pagina experiencia*/
-
-/* Aplicamos una imagen de fondo al contenedor principal */
-.fondo {
-  background-image: url("../img/back.png"); /* Usa el nombre real del archivo de fondo */
-  background-size: cover;
-  background-position: center;
-  padding: 3rem 1.5rem;
-  min-height: 100vh;
+.mapa { /* Sección del mapa */
+  display: flex; /* para alinear columnas */
+  flex-direction: column; /* para que se alineen verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
 }
 
-/* Título principal */
-.titulo {
-  font-size: 2.5rem;
+.mapa iframe { /* Mapa de Google Maps */
+  width: 80%; /* Ancho del mapa */
+  max-width: 600px; /* Ancho máximo del mapa */
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*para la pagina experiencia/experience*/
+
+.fondo { /* Aplicamos una imagen de fondo al contenedor principal */
+  background-image: url("../img/back.png"); /* La imagne de fondo */
+  background-size: cover; /* Ajusta la imagen al contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+  padding: 3rem 1.5rem; /*que no quede pegado al borde*/
+  min-height: 100vh; /*para que ocupe toda la pantalla*/
+}
+
+.titulo { /* Título principal "Experiencia Laboral" */
+  font-size: 2.5rem; 
   font-weight: bold;
   color: #1d3557;
-  border-bottom: 3px solid #fca311;
-  margin-bottom: 2rem;
+  border-bottom: 3px solid #fca311; /* Línea debajo del título */
+  margin-bottom: 2rem; /* Espacio debajo del título */
 }
 
-/* Sección de experiencia */
-.experiencia {
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
+.experiencia { /* Sección de experiencia */
+  max-width: 900px; /*para que no se haga tan grande*/
+  margin: 0 auto; /* Centrar la sección */
+  position: relative; /* Para posicionar la línea vertical */
 }
 
-/* Línea vertical */
-.experiencia::before {
-  content: '';
+.experiencia::before { /* Línea vertical */
+  content: ''; /*para que se vea la linea larga que esta en la izquierda*/
   position: absolute;
-  left: 15px;
+  left: 13px; /*es la distancia de la linea*/
   top: 5.7rem; /* Ajusta la posición para que comience encima del título */
-  bottom: 0;
-  width: 4px;
-  background-color: #1d4ed8;
+  bottom: 0; /*que la linea llegue hasta el final*/
+  width: 4px; /* Ancho de la línea */
+  background-color: #1d4ed8; /* Color de la línea */
 }
 
-/* Cada entrada del timeline */
-.timeline-item {
-  display: flex;
-  margin-bottom: 2rem;
-  position: relative;
-  padding-left: 40px;
+.timeline-item { /* Cada cuadro y punto*/
+  display: flex; /* para alinear la fecha y el contenido */
+  margin-bottom: 2rem; /* Espacio entre cada cuadro junto con el punto*/
+  position: relative; /* Para posicionar el punto */
+  padding-left: 40px; /* Espacio a la izquierda para el punto */
 }
 
-/* Punto en la línea */
-.punto {
-  position: absolute;
-  left: 7px;
-  top: 8px;
-  width: 16px;
-  height: 16px;
+.punto { /* Punto en la línea */
+  position: absolute; /* Para posicionar el punto */
+  left: 7px; /* Distancia del punto a la línea */
+  top: 8px; /* Ajusta la posición del punto */
+  width: 16px; /* Ancho del punto */
+  height: 16px; /* Alto del punto */
   background-color: #1d4ed8;
   border-radius: 50%;
 }
 
-/* Contenido del trabajo */
-.contenido {
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 1rem;
+.contenido { /* Contenido del trabajo */
+  background-color: rgb(210, 230, 246);
+  padding: 1rem; 
   border-radius: 8px;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8); /* Sombra del cuadro */
 }
 
-.etiqueta {
-  display: inline-block;
-  background-color: #e0edff;
-  color: #1d4ed8;
-  font-weight: bold;
+.etiqueta { /* Etiqueta de la fecha cuando empecé el traabajo */
+  display: inline-block; /* Para que se ajuste al contenido */
+  background-color: #d4d1e3; /* Color de fondo de la etiqueta */
+  color: #1f3d8e;
+  font-weight: bold; /* Para que se vea un poco mas fuerte*/
   padding: 0.3rem 0.6rem;
   border-radius: 5px;
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  margin-bottom: 0.5rem; /* Espacio inferior */
+  font-size: 1rem;
+  border: 1px solid violet; /*es el borde de la etiqueta*/
 }
 
-.icono {
+.icono { /* Icono de calendario */
   margin-right: 5px;
 }
 
-h3 {
-  margin: 0.3rem 0;
+h3 { /* Título de cada trabajo en cada cuadro */
+  margin: 0.3rem 0; /*para que no quede pegado al borde*/
   font-size: 1.2rem;
   font-weight: bold;
-  color: #0f172a;
+  color: #2a0f0f;
 }
 
-.empresa {
+.empresa { /* subtitulo de cada cuadro */
   font-weight: bold;
   color: #475569;
   margin-bottom: 0.3rem;
 }
 
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*footer de cada pagina*/
 
-.site-footer .logo span:last-child, 
-.site-footer .footer-col h3, 
-.site-footer .social-icons a {
-  color: white; /* Color de los textos y enlaces en el footer (CV, Contacto, Social)*/
-}
-
   .site-footer { 
     background-color: #1e3aa8; /* Color de fondo del footer */
-    color: white;
-    padding: 40px 20px 20px; 
-    text-align: center;
+    color: white; 
+    padding: 40px 20px 20px; /*padding superior e inferior*/
+    text-align: center; /* Centrar texto */
   }
   
   .footer-top { /* Parte superior del footer */
@@ -531,43 +504,43 @@ h3 {
     gap: 20px; /* Espacio entre columnas */
   }
   
-  .footer-col {
+  .footer-col { /* Cada columna del footer */
     flex: 1; /* Para que ocupen el mismo espacio */
-    min-width: 220px;
+    min-width: 220px; /* Ancho mínimo de las columnas */
   }
   
-  .footer-col h3 { 
-    font-weight: bold;
-    margin-bottom: 10px;
+  .footer-col h3 { /* Títulos de las columnas (CV, Contacto, Social) */
+    font-weight: bold; 
+    margin-bottom: 10px; /*es el espacio inferior*/
+    color: white;
   }
   
-  .footer-col p { 
-    margin: 8px 0;
+  .footer-col p { /* Texto de las columnas */
+    margin: 8px 0; /* Espacio superior e inferior */
   }
   
-  .footer-col a { 
+  .footer-col a { /* Enlace en el footer */
     color: white;
     text-decoration: none;
   }
   
-  .footer-col a:hover { 
+  .footer-col a:hover { /* Efecto hover para los enlaces */
     text-decoration: underline;
   }
   
-  /* Iconos de redes */
-  .social-icons a { 
+  .social-icons a {  /* Iconos de redes */
     font-size: 1.4rem; /* Tamaño de los iconos */
     margin-right: 15px; /* Espacio entre iconos */
     display: inline-block; /* Para que el ancho se ajuste al contenido */
   }
   
-  hr {
+  hr { /* Línea horizontal en el footer */
     border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid orange; 
     margin: 30px 0 20px;
   }
   
-  .footer-bottom { 
+  .footer-bottom { /* Parte inferior del footer */
     text-align: center;
     font-size: 0.9rem;
   }
@@ -576,38 +549,40 @@ h3 {
   @media (max-width: 768px) {
 
     /*menu*/
-    .navbar-nav {
+    .navbar-nav { 
       gap: 10px;
     }
 
-    .nav-link {
+    .nav-link { /* Espaciado entre elementos del menú */
       font-size: 14px;
     }
 
-    .lang-btn {
+    .lang-btn { /* Botón de idioma (EN) estilo bordeado */
       padding: 4px 10px;
     }
 
+    /*---------------------------------------------------------------------------------------------------------------------------------*/
+
     /*de la portada*/
 
-    .cv-container {
+    .cv-container { /* Contenedor principal de la primera pagina*/
         flex-direction: column;
         align-items: center;
         text-align: center;
       }
     
-      .text-container {
+      .text-container { /* es del texto principal */
         padding: 0 15px;
       }
     
-      .buttons {
+      .buttons { /* Botone de "video curriculum" */
         display: flex;
         flex-direction: column;
         align-items: center;
       }
     
       .btn-primary,
-      .btn-secondary {
+      .btn-secondary { /* Botones de video CV */
         margin: 5px 0;
         width: 80%;
       }
@@ -622,94 +597,98 @@ h3 {
       }
     
 
-      .experience-badge {
+      .experience-badge { /*para el badge de la experiencia*/
         right: 0;
         top: 130px;
       }
 
+      /*---------------------------------------------------------------------------------------------------------------------------------*/
+
       /*de la pagina Quien soy*/
 
-      .about-container {
+      .about-container { /*para la seccion de quien soy*/
         flex-direction: column;
       }
     
       .left-column,
-      .right-column {
+      .right-column { /*para las columnas*/
         width: 100%;
       }
     
-      .tags {
+      .tags { /* Etiquetas para las aficiones */
         justify-content: center;
       }
     
-      .tags span {
+      .tags span { /* estilo para cada etiqueta */
         flex: 1 1 40%;
         text-align: center;
       }
 
-
       /*cuadro de habilidades*/
 
-      .first {
+    .first {
         width: 95%;
         padding: 10px;
-    }
+      }
 
-    .h2 {
+    .h2 { /* Título habilidades*/
         font-size: 20px;
-    }
+      }
 
-    .box-name {
+    .box-name { /* Nombre de la habilidad */
         font-size: 16px;
     }
 
-    .progress-bar {
+    .progress-bar { /* Barra de progreso que indica el porcentaje */
         height: 15px;
     }
 
+    /*---------------------------------------------------------------------------------------------------------------------------------*/
+
     /*para la hoja de estudios*/
 
-    .primero {
+    .primero { /* el contenedor para la pagina de estudios*/
       flex-direction: column;
       padding: 1rem;
     }
 
-    .titulo {
+    .titulo { /* Título principal Estudios */
       font-size: 2rem;
       text-align: center;
     }
 
-    .fecha {
+    .fecha { /* Fechas (2017-2025) */
       position: static;
       display: inline-block;
-      margin-top: 0.5rem;
+      margin-top: 0.3rem; /* Espacio superior */
     }
 
-    .item {
+    .item { /* Cada entrada de la formación académica */
       padding-right: 1rem;
     }
 
-    .lateral {
+    .lateral { /* Sección de Actualmente estudiando e idiomas */
       flex-direction: column;
     }
 
+/*---------------------------------------------------------------------------------------------------------------------------------*/
 
     /*para la pagina experiencia*/
 
-    .experiencia::before {
+    .experiencia::before { /*para la linea vertical*/
       left: 10px;
     }
 
-    .timeline-item {
+    .timeline-item { /* Cada cuadro y punto*/
       flex-direction: column;
       padding-left: 30px;
     }
 
-    .contenido {
+    .contenido { /* Contenido del trabajo */
       padding: 0.8rem;
     }
 
-    .titulo {
+    .titulo { /* Título principal "Experiencia Laboral" */
       font-size: 2rem;
       text-align: center;
     }
