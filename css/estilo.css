@@ -322,7 +322,7 @@ body { /* Fuente general*/
 }
 
 .studies, .idiomas { /* Cuadros de Actualmente estudiando e idiomas */
-  background-color: #f8f9fa;
+  background-color: #f8f9;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
